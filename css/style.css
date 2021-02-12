@@ -33,7 +33,6 @@ body {
     color: #0f3057;
     font-size: 24px;
     padding-bottom: 30px;
-
 }
 
 /* ######## ENCABEZADO - MENU DE NAVEGACION ######### */
@@ -48,43 +47,6 @@ header {
     background-position: center;
 }
 
-.header-nav{
-    display: flex;
-    justify-content:flex-end;
-    height: 70px;
-    align-items: center;
-    font-weight: 700;
-
-}
-
-.nav-link-contacto{
-    border: 2px solid #0f3057;
-    padding: 5px 10px;
-    margin: 0 15px;
-    border-radius: 30px;
-    justify-content: center;
-    align-items: center;
-    color: #0f3057;
-
-}
-
-.nav-link-contacto:hover{
-    background-color: #16c79a;
-    border: none;
-    color: #fff;
-}
-
-.nav-link  {
-    margin: 20px;
-    color: #f8f1f1;
-    display: inline-block;
-    padding: 15px 10px;
-    font-size: 15px;
-
-}
-.nav-link:hover{
-    color: #0f3057;
-}
 
 .header .cont-text{
     margin: 150px;
@@ -115,10 +77,9 @@ header {
     align-items: center;
     color: #19456b;
     font-weight: bold;
-
 }
 
-.ctn-header:hover{
+.cont-text a:hover{
     background-color: #16c79a;
     color: #f8f1f1;
     border: none;
@@ -154,17 +115,10 @@ main .web-video{
 
 .video-dis{
     width: 100%;
-    /* width: 400px; */
-    height: 400px;
+    height: 600px;
 }
 
-.video-num h3{
-    text-align: center;
-    font-weight: 200;
-    color: #0f3057;
-    margin-bottom: 40px;
-    font-size: 24px;
-}
+
 
 .video-num p{
     color: #00587a;
@@ -177,71 +131,51 @@ main .portafolio {
     padding: 30px 0;
     background-color: #dddddd;
     width: 100%;
+    height: auto;
+    
 }
 
-
-
-.cont-portafolio{
+.container{
     display: flex;
-    justify-content: space-evenly;
+    justify-content:space-around;
     flex-wrap: wrap;
+    align-items: center;
 }
 
-
-
-.Port-img{
-    width: 45%;
-    display: block;
-    margin-bottom: 15px;
-    box-shadow: 0 0 6px rgba(0, 0, 0, .6);
-    cursor: pointer;
-}
-
-main .contacto{
-    padding: 30px 0;
-    height: 600px;
-    text-align: center;
-    width: 100%;
-}
-
-.contacto .contenedor{
-    display: flex;
-    justify-content:center;
-    width: 100%;
-
-}
-
-.Cont-Contacto .h3{
-    text-align: center;
-    font-weight: 200;
-    color: #0f3057;
-    margin-bottom: 45px;
-    font-size: 24px;
-}
-
-.Cont-Contacto{
-    width: 90%;
-    text-align: left;
-    color: #0f3057;;
-}
-
-.Cont-Contacto .formulario{
-    display: flex;
-    flex-direction: column;
-    width: 80%;
-    margin: auto;
-}
-
-.formulario .nombre, .email, .btn-envio{
-    display: inline-block;
-    padding: 15px 20px;
+.card{
     margin-bottom: 20px;
-    background: none;
+}
+
+
+
+.contenedor{
+    display: flex;
+    justify-content: center;
+}
+
+.cont-contacto{
+    display: block;
+}
+
+.contacto{
+    background-color: #f2f2f2;
+    width: 100%;
+    height: 600px;
+}
+
+label{
+    padding: 10px;
+}
+
+.text-label input[type="text"],
+.text-label input[type="email"] {
+    background-color: #fff;
     border: 1px solid #dddddd;
     border-radius: 10px;
-   
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
 }
-
 
 .textarea{
     margin-bottom: 20px;
@@ -249,29 +183,30 @@ main .contacto{
     min-width: 100%;
     min-height: 150px;
     max-height: 150px;
-    background: none;
+    background: #fff;
     border-radius: 10px;
     border: 1px solid #dddddd;
-    padding: 15px;
-    
+    padding: 10px;
 }
 
-.btn-envio{
-    display: inline-block;
-    padding-top: 20px;
-    padding: 10px 15px;
-    border: 1px solid #0f3057;
-    border-radius: 10px;
-    text-align: center;
-    color: #19456b;
+.btn{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.boton{
+    border: 1px solid #19456b;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 20px;
     width: 100px;
- 
 }
 
-.btn-envio:hover{
+.boton:hover{
     background-color: #16c79a;
     color: #f8f1f1;
-    border: none; 
+    border: none;
 }
 
 /* #### Seccion Footer #### */
@@ -281,7 +216,7 @@ main .contacto{
     padding-bottom: 0.1px;
     padding: 60px;
     width: 100%;
-    height: 100px;
+    height: 70px;
     display: flex;
     justify-content:center;
     align-items: center;
@@ -289,17 +224,16 @@ main .contacto{
 
 
 .Footer-nav{
-
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items:center;
+    justify-content:space-between;
     margin-bottom: 20px;
+    width: 45%;
 
 }
 
 .footer-icon{
     color: #f8f1f1;
-
 }
 
 .Footer-nav a{
